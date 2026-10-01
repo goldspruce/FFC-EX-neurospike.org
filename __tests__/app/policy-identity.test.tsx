@@ -135,7 +135,7 @@ describe('policies this site publishes as its own', () => {
 
     expect(mailtos.length).toBeGreaterThan(0)
     for (const href of mailtos) {
-      expect(href).toBe(`mailto:${siteConfig.contactEmail}`)
+      expect(href).toBe(`mailto:${siteConfig.contactEmail.replace(' at ', '@')}`)
     }
   })
 
@@ -147,7 +147,7 @@ describe('policies this site publishes as its own', () => {
 
     expect(mailtos.length).toBeGreaterThan(0)
     for (const href of mailtos) {
-      expect(href).toBe(`mailto:${siteConfig.contactEmail}`)
+      expect(href).toBe(`mailto:${siteConfig.contactEmail.replace(' at ', '@')}`)
     }
   })
 

@@ -58,7 +58,7 @@ describe('deployable security artifacts', () => {
     const wellKnownPayload = payload(wellKnown)
 
     expect(payload(rootCopy)).toBe(wellKnownPayload)
-    expect(wellKnownPayload).toContain(`Contact: mailto:${siteConfig.contactEmail}`)
+    expect(wellKnownPayload).toContain(`Contact: mailto:${siteConfig.contactEmail.replace(' at ', '@')}`)
     expect(wellKnownPayload).toContain('Preferred-Languages: en')
     // One deploy serves one origin+prefix. deploy.yml derives the base path
     // from public/CNAME alone, so this reads the same signal: with a CNAME the

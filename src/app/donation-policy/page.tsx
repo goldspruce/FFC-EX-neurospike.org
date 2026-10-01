@@ -62,7 +62,7 @@ export default function DonationPolicy() {
           <p>
             To discuss grant funding, or arrange giving by check or bank wire, please contact us
             directly at{' '}
-            <a href={`mailto:${siteConfig.contactEmail}`} className="text-primary underline">
+            <a href={`mailto:${siteConfig.contactEmail.replace(' at ', '@')}`} className="text-primary underline">
               {siteConfig.contactEmail}
             </a>
             . We will provide instructions and issue an official written receipt for tax purposes.
@@ -90,7 +90,7 @@ export default function DonationPolicy() {
           <p>For questions about donations or this policy, please contact us at:</p>
           <p>
             Email:{' '}
-            <a href={`mailto:${siteConfig.contactEmail}`} className="text-primary underline">
+            <a href={`mailto:${siteConfig.contactEmail.replace(' at ', '@')}`} className="text-primary underline">
               {siteConfig.contactEmail}
             </a>
           </p>

@@ -74,7 +74,7 @@ export default function NotFound() {
               </Link>{' '}
               contact route, or email{' '}
               <a
-                href={`mailto:${siteConfig.contactEmail}`}
+                href={`mailto:${siteConfig.contactEmail.replace(' at ', '@')}`}
                 className="text-[#005BB7] font-[700] underline decoration-dotted hover:decoration-solid transition-all"
               >
                 {siteConfig.contactEmail}

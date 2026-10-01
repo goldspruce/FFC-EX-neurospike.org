@@ -28,7 +28,7 @@ export default function ContactDetails({ heading }: { heading?: string }) {
         </li>
         <li className="text-[14px] text-[#666] leading-[24px] font-[500]">
           <strong>Email:</strong>{' '}
-          <a href={`mailto:${siteConfig.contactEmail}`} className="text-[#0062cc] underline">
+          <a href={`mailto:${siteConfig.contactEmail.replace(' at ', '@')}`} className="text-[#0062cc] underline">
             {siteConfig.contactEmail}
           </a>
         </li>

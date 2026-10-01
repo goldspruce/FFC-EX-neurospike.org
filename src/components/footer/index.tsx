@@ -178,7 +178,7 @@ const Footer: React.FC = () => {
               <div>
                 <p className="font-[500] text-[22px]">E-mail</p>
                 <a
-                  href={`mailto:${siteConfig.contactEmail}`}
+                  href={`mailto:${siteConfig.contactEmail.replace(' at ', '@')}`}
                   className="aria-font font-[500] text-[15px] hover:text-cyan-400 transition-colors break-all"
                 >
                   {siteConfig.contactEmail}

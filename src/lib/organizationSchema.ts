@@ -46,7 +46,7 @@ export function organizationSchema(): Record<string, unknown> {
     name: siteConfig.name,
     url: siteUrl('/'),
     description: siteConfig.description,
-    email: siteConfig.contactEmail,
+    email: siteConfig.contactEmail.replace(' at ', '@'),
     // Absolute: consumers of JSON-LD do not resolve relative URLs against the
     // page the way a browser does.
     logo: `${siteConfig.url}${assetPath('/web-app-manifest-512x512.png')}`,

@@ -43,7 +43,7 @@ describe('siteConfig contract', () => {
     // Empty omits the twitter:site meta entirely; anything else carries the @.
     expect(siteConfig.twitterHandle === '' || siteConfig.twitterHandle.startsWith('@')).toBe(true)
 
-    expect(siteConfig.contactEmail).toMatch(/^[^@\s]+@[^@\s]+\.[^@\s]+$/)
+    expect(siteConfig.contactEmail).toMatch(/^(?:[^@\s]+@[^@\s]+\.[^@\s]+|.+ at .+\..+)$/)
     expect(siteConfig.themeColor).toMatch(/^#[0-9a-fA-F]{6}$/)
     expect(siteConfig.vulnerabilityDisclosurePath).toMatch(/^\//)
 
