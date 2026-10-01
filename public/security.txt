@@ -11,7 +11,7 @@
 # the base path disappears and these lines move to the apex in the same change
 # -- scripts/check-drift.mjs fails if they get out of step.
 
-Contact: mailto:rlee@codex.stanford.edu
+Contact: mailto:robert@codex.stanford.edu
 Expires: 2027-12-31T00:00:00.000Z
 Preferred-Languages: en
 Canonical: https://freeforcharity.github.io/FFC-EX-neurospike.org/.well-known/security.txt

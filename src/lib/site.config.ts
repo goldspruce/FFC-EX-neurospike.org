@@ -139,7 +139,7 @@ export const siteConfig: SiteConfig = {
   // fails if either half is done without the other.
   url: 'https://freeforcharity.github.io',
   twitterHandle: '',
-  contactEmail: 'rlee@codex.stanford.edu',
+  contactEmail: 'robert@codex.stanford.edu',
   keywords: [
     'focused research organization',
     'FRO',

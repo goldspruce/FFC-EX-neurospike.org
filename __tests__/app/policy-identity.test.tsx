@@ -47,8 +47,8 @@ const EMAIL_RE = /[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}/g
  * Scans one text node at a time rather than `container.textContent`, which
  * concatenates adjacent elements with no separator: an address ending a link
  * runs straight into the next element's first word, and the TLD pattern
- * swallows it — `rlee@codex.stanford.edu` + `Main Address` reads as
- * `rlee@codex.stanford.eduMain`, so a correct page fails.
+ * swallows it — `robert@codex.stanford.edu` + `Main Address` reads as
+ * `robert@codex.stanford.eduMain`, so a correct page fails.
  */
 function renderedEmails(container: HTMLElement): Set<string> {
   const walker = document.createTreeWalker(container, NodeFilter.SHOW_TEXT)
