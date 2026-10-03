@@ -137,7 +137,7 @@ export const siteConfig: SiteConfig = {
   // GitHub Pages, add `public/CNAME` containing `neurospike.org`, set this to
   // 'https://neurospike.org', and rerun `npm run check:drift` -- checkDeployOrigin
   // fails if either half is done without the other.
-  url: 'https://freeforcharity.github.io',
+  url: 'https://neurospike.org',
   twitterHandle: '',
   contactEmail: 'robert at codex.stanford.edu',
   keywords: [
