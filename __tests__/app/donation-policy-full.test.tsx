@@ -57,8 +57,8 @@ describe('Free For Charity Donation Policy page', () => {
 
   it('should have a contact email link', () => {
     render(<DonationPolicyPage />)
-    const emailLink = screen.getByText('clarkemoyer@freeforcharity.org')
-    expect(emailLink.closest('a')).toHaveAttribute('href', 'mailto:clarkemoyer@freeforcharity.org')
+    const emailLink = screen.getByText('info@neurospike.org')
+    expect(emailLink.closest('a')).toHaveAttribute('href', 'mailto:info@neurospike.org')
   })
 
   it('should display the effective date', () => {

@@ -27,15 +27,17 @@ export default function ContentImage({
   alt,
   width,
   height,
+  className,
 }: {
   /** File name within `public/Images/content`, e.g. `home-01.jpg`. */
   name: string
   alt: string
   width: number
   height: number
+  className?: string
 }) {
   return (
-    <figure className="my-[22px]">
+    <figure className={className ?? "my-[22px]"}>
       <Image
         // Directory inlined inside assetPath() rather than held in a named
         // constant: scripts/check-drift.mjs accepts an "/Images/..." literal

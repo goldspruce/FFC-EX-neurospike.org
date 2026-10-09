@@ -267,10 +267,10 @@ const index = () => {
           <p className="text-[14px] text-[#666] pb-[10px] leading-[24px] font-[500]">
             For any questions or further information about our donation policy, please contact us at{' '}
             <a
-              href="mailto:clarkemoyer@freeforcharity.org"
+              href="mailto:info@neurospike.org"
               className="text-[#0062cc] underline break-words"
             >
-              clarkemoyer@freeforcharity.org
+              info@neurospike.org
             </a>{' '}
             520-222-8104
           </p>

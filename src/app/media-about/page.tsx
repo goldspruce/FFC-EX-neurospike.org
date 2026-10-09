@@ -53,18 +53,22 @@ export default function MediaAbout() {
         width={404}
         height={413}
       />
-      <ContentImage
-        name="media-02.png"
-        alt="Press coverage featuring Robert H. Lee"
-        width={902}
-        height={1420}
-      />
-      <ContentImage
-        name="media-03.jpg"
-        alt="Press coverage featuring Robert H. Lee"
-        width={1280}
-        height={1707}
-      />
+      <div className="my-[22px] grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-[860px]">
+        <ContentImage
+          name="media-02.png"
+          alt="Press coverage featuring Robert H. Lee"
+          width={902}
+          height={1420}
+          className="my-0"
+        />
+        <ContentImage
+          name="media-03.jpg"
+          alt="Press coverage featuring Robert H. Lee"
+          width={1280}
+          height={1707}
+          className="my-0"
+        />
+      </div>
 
       <H2 id="links">Links</H2>
       <UL>

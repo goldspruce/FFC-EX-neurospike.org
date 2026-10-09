@@ -139,7 +139,7 @@ export const siteConfig: SiteConfig = {
   // fails if either half is done without the other.
   url: 'https://neurospike.org',
   twitterHandle: '',
-  contactEmail: 'robert at codex.stanford.edu',
+  contactEmail: 'info at neurospike.org',
   keywords: [
     'focused research organization',
     'FRO',

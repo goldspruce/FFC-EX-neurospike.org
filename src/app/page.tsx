@@ -123,7 +123,7 @@ export default function Home() {
         <A href="https://www.linkedin.com/in/goldspruce">https://www.linkedin.com/in/goldspruce</A>
       </P>
       <P>
-        <A href="mailto:robert@codex.stanford.edu">robert at codex.stanford.edu</A>
+        <A href={`mailto:${siteConfig.contactEmail.replace(' at ', '@')}`}>{siteConfig.contactEmail}</A>
       </P>
       <P>
         Mostly on US Pacific Time (GMT −7/8). Sometimes on US Eastern Time (GMT −4/5) or China
