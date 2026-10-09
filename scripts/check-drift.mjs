@@ -671,7 +671,9 @@ async function checkSecurityTxtSync(siteConfig) {
   // fetched from, so listing an unreachable one is worse than listing none.
   const prefix = await deployPathPrefix()
   const expectedLines = [
-    siteConfig.contactEmail ? `Contact: mailto:${siteConfig.contactEmail}` : null,
+    siteConfig.contactEmail
+      ? `Contact: mailto:${siteConfig.contactEmail.replace(' at ', '@')}`
+      : null,
     'Preferred-Languages: en',
     `Canonical: ${origin}${prefix}/.well-known/security.txt`,
     `Canonical: ${origin}${prefix}/security.txt`,
