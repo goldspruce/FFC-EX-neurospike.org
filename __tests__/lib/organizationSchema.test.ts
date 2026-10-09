@@ -15,7 +15,7 @@ describe('organization JSON-LD', () => {
     expect(schema.name).toBe(siteConfig.name)
     expect(schema.url).toBe(siteUrl('/'))
     expect(schema.description).toBe(siteConfig.description)
-    expect(schema.email).toBe(siteConfig.contactEmail)
+    expect(schema.email).toBe(siteConfig.contactEmail.replace(' at ', '@'))
     expect(schema.taxID).toBe(siteConfig.ein)
   })
 

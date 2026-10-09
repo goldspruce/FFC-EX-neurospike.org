@@ -62,7 +62,7 @@ describe('Footer component', () => {
   it('should have email contact link', () => {
     render(<Footer />)
     const emailLink = screen.getByText(siteConfig.contactEmail).closest('a')
-    expect(emailLink).toHaveAttribute('href', `mailto:${siteConfig.contactEmail}`)
+    expect(emailLink).toHaveAttribute('href', `mailto:${siteConfig.contactEmail.replace(' at ', '@')}`)
   })
 
   it('should display the EIN number', () => {

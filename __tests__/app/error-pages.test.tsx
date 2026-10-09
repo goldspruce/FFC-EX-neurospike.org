@@ -77,7 +77,7 @@ describe('not-found page (app/not-found.tsx)', () => {
 
     expect(screen.getByRole('link', { name: siteConfig.contactEmail })).toHaveAttribute(
       'href',
-      `mailto:${siteConfig.contactEmail}`
+      `mailto:${siteConfig.contactEmail.replace(' at ', '@')}`
     )
   })
 })

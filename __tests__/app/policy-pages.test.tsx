@@ -81,7 +81,10 @@ describe('Policy page rendering', () => {
   it('Donation Policy has a contact email link', () => {
     render(<DonationPolicyPage />)
     const emailLink = screen.getByText(siteConfig.contactEmail)
-    expect(emailLink.closest('a')).toHaveAttribute('href', `mailto:${siteConfig.contactEmail}`)
+    expect(emailLink.closest('a')).toHaveAttribute(
+      'href',
+      `mailto:${siteConfig.contactEmail.replace(' at ', '@')}`
+    )
   })
 
   it('Security Acknowledgements renders heading', () => {
