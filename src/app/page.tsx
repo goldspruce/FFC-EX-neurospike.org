@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import React from 'react'
 import { siteConfig, siteUrl } from '@/lib/site.config'
 import { PageShell, PageTitle, H2, H3, P, UL, OL, A, Lede } from '@/components/content'
-import ContentImage from '@/components/content/ContentImage'
 
 export const metadata: Metadata = {
   title: `${siteConfig.name} | Executive Summary`,
@@ -31,24 +30,6 @@ export default function Home() {
         </li>
         <li>Knowledge Node Maps</li>
       </UL>
-      <ContentImage
-        name="home-01.jpg"
-        alt="Neurospike FRO executive summary visual"
-        width={1082}
-        height={817}
-      />
-      <ContentImage
-        name="home-02.jpg"
-        alt="Neurospike FRO supporting figure"
-        width={512}
-        height={449}
-      />
-      <ContentImage
-        name="home-03.jpg"
-        alt="Neurospike FRO supporting figure"
-        width={481}
-        height={425}
-      />
 
       <H2 id="fro">1. Focused Research Organization (FRO)</H2>
       <P>
